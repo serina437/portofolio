@@ -1,0 +1,1307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GoBakery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="navbar navbar-expand-lg fixed-top navbar-custom">
+
+        <div class="container  px-5">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" alt="" width="200px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 text-dark hover-effect" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-dark hover-effect" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-dark hover-effect" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-dark hover-effect" href="#testimonial-section">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 text-dark hover-effect" href="#ctc">Contact Us</a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- CSS untuk efek hover -->
+
+
+    <section class="home" id="home">
+        <div class="container  px-5 ">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="assets/banner.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                        height="500" loading="lazy">
+                </div>
+
+
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 ">
+                        <div class="waviyy">
+                            <span style="--i:1">Looking</span>
+                            <span style="--i:2">for</span>
+                            <span style="--i:3">the</span>
+                            <span style="--i:4">Perfect</span>
+                            <span style="--i:5">Cake?</span>
+                        </div>
+                    </h1>
+                    <div class="waviy text-dark">
+                        <span style="--i:1">Discover</span>
+                        <span style="--i:2"> Why</span>
+                        <span style="--i:3">GoBakery</span>
+                        <span style="--i:4">is</span>
+                        <span style="--i:5">Your</span>
+                        <span style="--i:6">Go</span>
+                        <span style="--i:7">To</span>
+                        <span style="--i:8">Spot</span>
+
+                    </div>
+                    <p class="lead">GoBakery turn every cake into a masterpiece. Crafted with high-quality ingredients
+                        and a lot of love, our cakes are designed to delight your taste buds and make every occasion
+                        unforgettable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="about py-5" id="about">
+        <div class="container  px-5">
+            <div class="row align-items-center g-5 ">
+                <!-- Gambar di kiri -->
+                <div class=" col-lg-6">
+                    <img src="assets/cake.webp" alt="" class="img-fluid pt-5" />
+                </div>
+
+                <!-- Teks di kanan -->
+                <div class="col-lg-6">
+                    <h1>Since GoBakery started</h1>
+                    <p class="fs-5 lead">
+                        Every cake we make is not only delicious but also crafted with love. We always use
+                        high-quality ingredients. Are you looking for a custom cake for a special occasion? From
+                        birthdays
+                        and weddings to small gatherings, we’re ready to bring your cake dreams to life with designs and
+                        flavors
+                        that suit your wishes. <br />
+                        <span id="points"> </span>
+                        <span id="moreText"> We are committed to providing the best experience for our customers, with
+                            each cake designed to create unforgettable moments. GoBakery is the perfect place for those
+                            who
+                            want to enjoy delightful cakes that make special moments even more memorable.
+                        </span>
+                    </p>
+                    <button class="btn-dark" onclick="toggleText()" id="textButton">Show More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product" id="product">
+        <div class="text-center container px-5 py-5" data-aos="fade-up" data-aos-duration="1000">
+
+            <div class="d-flex align-items-center ">
+                <div class="flex-grow-1 line"></div>
+                <h3 class="mx-3 text-center py-5 text-center">Most Popular Cakes</h3>
+                <div class="flex-grow-1 line"></div>
+            </div>
+
+            <div class="row">
+                <!--Product 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card" data-bs-target="#modalProduct1" data-bs-toggle="modal">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                            <img src="assets/lapis.jpg" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">Lapis Lenggit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Product 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card" data-bs-target="#modalProduct2" data-bs-toggle="modal">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                            <img src="assets/bento.jpg" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">Bento Cake</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Product 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card" data-bs-target="#modalProduct3" data-bs-toggle="modal">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                            <img src="assets/matcha.jpg" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">Matcha Cupcakes</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Product 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card" data-bs-target="#modalProduct4" data-bs-toggle="modal">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                            <img src="assets/milk.jpg" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">Milk Pudding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card" data-bs-target="#modalProduct5" data-bs-toggle="modal">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                            <img src="assets/brownes.jpg" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">Brownies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card" data-bs-target="#modalProduct6" data-bs-toggle="modal">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                            <img src="assets/cookies.jpg" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">Chocolate Chip Cookies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card" data-bs-target="#modalProduct7" data-bs-toggle="modal">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                            <img src="assets/puddingbirthday.jpg" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">Birthday Pudding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card" data-bs-target="#modalProduct8" data-bs-toggle="modal">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                            data-mdb-ripple-color="light">
+                            <img src="assets/cstm2.jpg" class="card-img-top" alt="">
+                            <a href="#!">
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text text-center">Custom Cake</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modals">
+        <!--Modal untuk Product 1 -->
+        <div class="modal fade" id="modalProduct1" tabindex="-1" aria-labelledby="modalProduct2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" data-aos="fade-up" data-aos-duration="800">
+
+
+                    <div class="modal-body row">
+                        <!--Centered Image on Small Screens -->
+                        <div
+                            class="col-12 col-md-5 d-flex justify-content-center align-items-center mb-3 mb-md-0 text-center">
+                            <img src="assets/lapis.jpg" alt="" style="width:200px; height:auto; object-fit:cover;">
+                        </div>
+                        <!--Text on Right -->
+                        <div class="col-12 col-md-7 text-center text-md-start">
+                            <p style="font-size:1.5rem; font-weight:normal;">This cake is a customer favorite thanks to
+                                its
+                                soft texture and rich, buttery layers. Made with premium ingredients, it's perfect for
+                                special occasions</p>
+                            <div class="text-warning mb-1 me-2" style="font-size:1.5rem;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span style="font-size:1.5rem;">5/5</span>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="font-size:1.3rem; color:#fff;">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--Modal untuk Product 2 -->
+        <div class="modal fade" id="modalProduct2" tabindex="-1" aria-labelledby="modalProduct2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" data-aos="fade-up" data-aos-duration="800">
+
+
+                    <div class="modal-body row">
+                        <!--Centered Image on Small Screens -->
+                        <div
+                            class="col-12 col-md-5 d-flex justify-content-center align-items-center mb-3 mb-md-0 text-center">
+                            <img src="assets/bento.jpg" alt="" style="width:200px; height:auto; object-fit:cover;">
+                        </div>
+                        <!--Text on Right -->
+                        <div class="col-12 col-md-7 text-center text-md-start">
+                            <p style="font-size:1.5rem; font-weight:normal;">Loved by many because of its cute,
+                                customizable
+                                design and delightful flavors, our Bento Cake is just the right size for a sweet
+                                surprise.
+                            </p>
+                            <div class="text-warning mb-1 me-2" style="font-size:1.5rem;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+
+                            </div>
+                            <span style="font-size:1.5rem;">4/5</span>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="font-size:1.3rem; color:#fff;">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Modal untuk Product 3 -->
+        <div class="modal fade" id="modalProduct3" tabindex="-1" aria-labelledby="modalProduct2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" data-aos="fade-up" data-aos-duration="800">
+
+
+                    <div class="modal-body row">
+                        <!--Centered Image on Small Screens -->
+                        <div
+                            class="col-12 col-md-5 d-flex justify-content-center align-items-center mb-3 mb-md-0 text-center">
+                            <img src="assets/matcha.jpg" alt="" style="width:200px; height:auto; object-fit:cover;">
+                        </div>
+                        <!--Text on Right -->
+                        <div class="col-12 col-md-7 text-center text-md-start">
+                            <p style="font-size:1.5rem; font-weight:normal;">
+                                A top choice among matcha fans, these
+                                cupcakes
+                                combine a balanced sweetness with rich matcha flavor, topped with smooth frosting.
+
+                            </p>
+                            <div class="text-warning mb-1 me-2" style="font-size:1.5rem;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span style="font-size:1.5rem;">5/5</span>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="font-size:1.3rem; color:#fff;">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal untuk Product 4 -->
+        <div class="modal fade" id="modalProduct4" tabindex="-1" aria-labelledby="modalProduct2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" data-aos="fade-up" data-aos-duration="800">
+
+
+                    <div class="modal-body row">
+                        <!--Centered Image on Small Screens -->
+                        <div
+                            class="col-12 col-md-5 d-flex justify-content-center align-items-center mb-3 mb-md-0 text-center">
+                            <img src="assets/milk.jpg" alt="" style="width:200px; height:auto; object-fit:cover;">
+                        </div>
+                        <!--Text on Right -->
+                        <div class="col-12 col-md-7 text-center text-md-start">
+                            <p style="font-size:1.5rem; font-weight:normal;">This Milk Pudding is a hit because of its
+                                creamy, melt-in-your-mouth texture, making it a crowd-pleasing dessert.
+                            </p>
+                            <div class="text-warning mb-1 me-2" style="font-size:1.5rem;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span style="font-size:1.5rem;">5/5</span>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="font-size:1.3rem; color:#fff;">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProduct5" tabindex="-1" aria-labelledby="modalProduct2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" data-aos="fade-up" data-aos-duration="800">
+
+
+                    <div class="modal-body row">
+                        <!--Centered Image on Small Screens -->
+                        <div
+                            class="col-12 col-md-5 d-flex justify-content-center align-items-center mb-3 mb-md-0 text-center">
+                            <img src="assets/brownes.jpg" alt="" style="width:200px; height:auto; object-fit:cover;">
+                        </div>
+                        <!--Text on Right -->
+                        <div class="col-12 col-md-7 text-center text-md-start">
+                            <p style="font-size:1.5rem; font-weight:normal;">
+                                Beloved by chocolate lovers, our fudgy
+                                Brownies
+                                stand out with their rich, decadent taste and irresistibly soft texture.
+
+                            </p>
+                            <div class="text-warning mb-1 me-2" style="font-size:1.5rem;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+
+                            </div>
+                            <span style="font-size:1.5rem;">4/5</span>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="font-size:1.3rem; color:#fff;">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--Modal untuk Product 2 -->
+        <div class="modal fade" id="modalProduct6" tabindex="-1" aria-labelledby="modalProduct2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" data-aos="fade-up" data-aos-duration="800">
+
+
+                    <div class="modal-body row">
+                        <!--Centered Image on Small Screens -->
+                        <div
+                            class="col-12 col-md-5 d-flex justify-content-center align-items-center mb-3 mb-md-0 text-center">
+                            <img src="assets/cookies.jpg" alt="" style="width:200px; height:auto; object-fit:cover;">
+                        </div>
+                        <!--Text on Right -->
+                        <div class="col-12 col-md-7 text-center text-md-start">
+                            <p style="font-size:1.5rem; font-weight:normal;">
+                                These cookies are a must-have, known for
+                                their
+                                crispy edges, chewy centers, and gooey chocolate chunks.
+
+                            </p>
+                            <div class="text-warning mb-1 me-2" style="font-size:1.5rem;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span style="font-size:1.5rem;">5/5</span>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="font-size:1.3rem; color:#fff;">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Modal untuk Product 3 -->
+        <div class="modal fade" id="modalProduct7" tabindex="-1" aria-labelledby="modalProduct2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" data-aos="fade-up" data-aos-duration="800">
+
+
+                    <div class="modal-body row">
+                        <!--Centered Image on Small Screens -->
+                        <div
+                            class="col-12 col-md-5 d-flex justify-content-center align-items-center mb-3 mb-md-0 text-center">
+                            <img src="assets/puddingbirthday.jpg" alt=""
+                                style="width:200px; height:auto; object-fit:cover;">
+                        </div>
+                        <!--Text on Right -->
+                        <div class="col-12 col-md-7 text-center text-md-start">
+                            <p style="font-size:1.5rem; font-weight:normal;">
+                                This Birthday Pudding is popular for
+                                offering a
+                                light, creamy alternative to traditional birthday cakes, making it a refreshing choice.
+                            </p>
+                            <div class="text-warning mb-1 me-2" style="font-size:1.5rem;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+
+                            </div>
+                            <span style="font-size:1.5rem;">4/5</span>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="font-size:1.3rem; color:#fff;">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal untuk Product 4 -->
+        <div class="modal fade" id="modalProduct8" tabindex="-1" aria-labelledby="modalProduct2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" data-aos="fade-up" data-aos-duration="800">
+
+
+                    <div class="modal-body row">
+                        <!--Centered Image on Small Screens -->
+                        <div
+                            class="col-12 col-md-5 d-flex justify-content-center align-items-center mb-3 mb-md-0 text-center">
+                            <img src="assets/cstm2.jpg" alt="" style="width:200px; height:auto; object-fit:cover;">
+                        </div>
+                        <!--Text on Right -->
+                        <div class="col-12 col-md-7 text-center text-md-start">
+                            <p style="font-size:1.5rem; font-weight:normal;">Highly requested for birthdays, this
+                                customizable cake lets you design the perfect centerpiece for any celebration, from
+                                flavor
+                                to decoration.</p>
+                            <div class="text-warning mb-1 me-2" style="font-size:1.5rem;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span style="font-size:1.5rem;">5/5</span>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="font-size:1.3rem; color:#fff;">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container px-5" data-aos="zoom-in-up" data-aos-duration="1500">
+
+
+            <h2 class="text-dark fw-bold text-center py-5">Gallery</h2>
+
+            <!--Tabs navigation -->
+            <ul class=" nav nav-tabs justify-content-center" id="productTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active fw-bold " id="birthday-tab" data-bs-toggle="tab"
+                        data-bs-target="#birthday" type="button" role="tab" aria-controls="birthday"
+                        aria-selected="true" style="color: black;">Birthday Cake</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-bold " id="cookies-tab" data-bs-toggle="tab" data-bs-target="#cookies"
+                        type="button" role="tab" aria-controls="cookies" aria-selected="false"
+                        style="color: black;">Cookies</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-bold " id="cupcake-tab" data-bs-toggle="tab" data-bs-target="#cupcake"
+                        type="button" role="tab" aria-controls="cupcake" aria-selected="false"
+                        style="color: black;">Cupcakes & Dessert</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-bold " id="pudding-tab" data-bs-toggle="tab" data-bs-target="#pudding"
+                        type="button" role="tab" aria-controls="pudding" aria-selected="false"
+                        style="color: black;">Pudding</button>
+                </li>
+            </ul>
+
+
+            <!--Tabs content -->
+            <div class="tab-content py-5" id="productTabsContent">
+                <!--Sarung Tenun Tab -->
+                <div class="tab-pane fade show active" id="birthday" role="tabpanel" aria-labelledby="birthday-tab">
+                    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-3">
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/pinata.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Piñata Cake</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/cstm2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Custom Cake</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/cstm3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Custom Cake</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/puddingbirthday.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Birthday Pudding</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/cstm1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Custom Cake</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/coklat.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Custom Cake</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/cstm4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Custom Cake</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/bento.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Bento Cake</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--Add more Tas cards here -->
+                    </div>
+                </div>
+                <!--Selendang Tab -->
+                <div class="tab-pane fade " id="cookies" role="tabpanel" aria-labelledby="cookies-tab">
+                    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-3">
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/sugar.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Sugar Cookies</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/kas.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Kastangel</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/selei.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Thumbprint Cookies</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/peanut.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Peanut Butter Cookies </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/nastar.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Nastar</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/macarons.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Macarons</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/lidah kucing.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Lidah Kucing</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/cookies.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Chocolate Chip Cookies</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--Add more Tas cards here -->
+                    </div>
+                    <!--Add more Tas cards here -->
+                </div>
+
+                <!--Selendang Tab -->
+                <div class="tab-pane fade " id="cupcake" role="tabpanel" aria-labelledby="cupcake-tab">
+                    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-3">
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/vcap.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Vanilla Cupcakes</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/scap.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Strawberry Cupcakes </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/rcup.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Red Velvet Cupcakes</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/matcha.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Matcha Cupcakes</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/misu.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Tiramisu Cake</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/curros.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Curros</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/chees.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Cheesecake</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/brownes.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Brownies</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--Add more Tas cards here -->
+                    </div>
+                    <!--Add more Tas cards here -->
+                </div>
+                <!--Selendang Tab -->
+                <!--Selendang Tab -->
+                <div class="tab-pane fade " id="pudding" role="tabpanel" aria-labelledby="pudding-tab">
+                    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-3">
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/pandan.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Pandan Moss Pudding</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/manggaa.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Manggo Pudding</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+
+                            <div class="card h-100  ">
+                                <img src="assets/karamel.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Caramel Pudding</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/jagung.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Milk Corn Pudding</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/choco.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Chocolate Pudding</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/cofee.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Cappuccino Pudding</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/buah.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Fruit Pudding</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="card h-100  ">
+                                <img src="assets/milk.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Milk Pudding</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--Add more Tas cards here -->
+                    </div>
+                    <!--Add more Tas cards here -->
+                </div>
+
+
+            </div>
+            <!--m-->
+
+        </div>
+    </section>
+
+    <!--Testimonial Section -->
+    <section id="testimonial-section" class="py-5 sec ">
+        <div class="container  px-5" data-aos="fade-left" data-aos-duration="1500">
+            <h2 class="text-center mb-5">Feedback from Our Cake Lovers!</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="false">
+                <!-- Set data-bs-ride to false -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text-center">
+                            <p class="lead">"GoBakery truly provides an extraordinary cake experience! The design of my
+                                child's birthday cake was beautiful, and the taste was amazing. Thank you, GoBakery!"
+                            </p>
+                            <h4>- Nandini, Alor</h4>
+                            <img src="assets/manusia2.jpg" class="rounded-circle mt-3" alt="Customer 1"
+                                style="width: 100px; height: 100px;">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <p class="lead">"GoBakery always delivers cakes with the best quality. From regular orders
+                                to custom ones, everything is satisfying. Thank you, GoBakery!"</p>
+                            <h4>- Ayu, Ende</h4>
+                            <img src="assets/manusia1.jpg" class="rounded-circle mt-3" alt="Customer 2"
+                                style="width: 100px; height: 100px;">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <p class="lead">"Quick service and delicious cakes. I am very impressed with the quality of
+                                the ingredients used. GoBakery is always my top choice!"</p>
+                            <h4>- Sam, Kupang</h4>
+                            <img src="assets/manusia4.jpg" class="rounded-circle mt-3" alt="Customer 3"
+                                style="width: 100px; height: 100px;">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <p class="lead">"The cakes at GoBakery are so delicious! I never expected cakes to taste
+                                this good. Highly recommended for cake lovers.</p>
+                            <h4>- Rustaan, Rote</h4>
+                            <img src="assets/manusia3.jpg" class="rounded-circle mt-3" alt="Customer 3"
+                                style="width: 100px; height: 100px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Sebelumnya</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Berikutnya</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="question">
+        <div class="container px-5">
+
+
+            <div data-aos="fade-right" data-aos-duration="1500" class="accordion accordion-flush"
+                id="accordionFlushExample" style="max-width: 700px; margin: 0 auto;">
+                <div class="px-4 text-center">
+                    <h1 class="text-body-emphasis pt-5">FAQ</h1>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Can I order a custom cake based on my request?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body small">Absolutely! We accept custom cake orders for various events
+                            such as birthdays, weddings, or other special occasions. Contact us to discuss the design
+                            and flavors you desire.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            How long does it take to process an order?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body small">The processing time depends on the type and quantity of cakes
+                            ordered. Standard cakes usually take 1-2 business days. For custom cakes, we recommend
+                            ordering at least 3-5 days before your event.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Are the ingredients used at GoBakery organic and high quality?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body small">Yes, we only use organic and high-quality ingredients to
+                            ensure our cakes are not only delicious but also healthy.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            Can I cancel or change my order after it has been placed?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body small">Yes, you can cancel or change your order, but please do so as
+                            soon as possible.</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div data-aos="fade-right" data-aos-duration="1500" class="py-5">
+                <div class="row">
+                    <!-- Maps on the left side -->
+                    <div style=" padding-top:40px;" class="col py-5" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="maps align-items-center">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!4v1727323938010!6m8!1m7!1sgh3Co0I2fwA7LJgAKHagvA!2m2!1d-8.218258548593466!2d124.5188730841889!3f84.58121184443465!4f-25.208982085024644!5f0.7820865974627469"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Contact form on the right side -->
+                    <div class="col-md-6 " data-aos="fade-left" data-aos-duration="1000" id="contact">
+                        <h2 class="contact text-center mb-4 fw-bold" style="font-size: 1,5rem;">Any Question</h2>
+                        <form>
+                            <!-- Input Nama -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-bold" style="font-size: 1rem;">Nama
+                                    Lengkap</label>
+                                <input type="text" class="form-control" id="name"
+                                    placeholder="Masukkan nama lengkap Anda" style="font-size: 1rem;">
+                            </div>
+                            <!-- Input Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold" style="font-size: 1rem;">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda"
+                                    style="font-size: 1rem;">
+                            </div>
+                            <!-- Input Password -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label fw-bold" style="font-size: 1rem;">Kata
+                                    Sandi</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Masukkan kata sandi" style="font-size: 1rem;">
+                            </div>
+                            <!-- Input Pesan -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-bold" style="font-size: 1rem;">Pesan</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Tuliskan pesan Anda"
+                                    required style="font-size: 1rem;"></textarea>
+                            </div>
+                            <!-- Submit button -->
+
+                            <button type="submit" class=" btn-dark">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ctc" class="footer">
+        <div class="parallaxx">
+            <div class="container px-5">
+                <div data-aos="fade-up" data-aos-duration="1500" class="contact py-5">
+                    <h2 class="mb-5 text-center px-5 fw-bold">Contact Us</h2>
+                    <div class="row justify-content-center">
+                        <!-- Facebook -->
+                        <div class="col-6 col-md-3 mb-3">
+                            <a href="https://www.instagram.com/gobakery.kitchen/"
+                                class="text-decoration-none text-dark">
+                                <div class="card w-100 text-center"
+                                    style="border: 3px solid #f4adad; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <div class="hover-3">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <i class="bi bi-facebook fs-2"></i>
+                                            <p class="card-text fw-bold text-wrap">GoBakery</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- X (formerly Twitter) -->
+                        <div class="col-6 col-md-3 mb-3">
+                            <a href="https://www.instagram.com/gobakery.kitchen/"
+                                class="text-decoration-none text-dark">
+                                <div class="card w-100 text-center"
+                                    style="border: 3px solid #f4adad; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <div class="hover-3">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <i class="bi bi-twitter fs-2"></i>
+                                            <p class="card-text fw-bold text-wrap">Go_Bakery</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- WhatsApp -->
+                        <div class="col-6 col-md-3 mb-3">
+                            <a href="https://www.instagram.com/gobakery.kitchen/"
+                                class="text-decoration-none text-dark">
+                                <div class="card w-100 text-center"
+                                    style="border: 3px solid #f4adad; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <div class="hover-3">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <i class="bi bi-whatsapp fs-2"></i>
+                                            <p class="card-text fw-bold text-wrap">082111752860</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Instagram -->
+                        <div class="col-6 col-md-3 mb-3">
+                            <a href="https://www.instagram.com/gobakery.kitchen/"
+                                class="text-decoration-none text-dark">
+                                <div class="card w-100 text-center"
+                                    style="border: 3px solid #f4adad; background-color: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <div class="hover-3">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <i class="bi bi-instagram fs-2"></i>
+                                            <p class="card-text fw-bold text-wrap">GoBakery.kitchen</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="footer  position-relative py-5 fs-5">
+
+        <div class="container  px-5">
+            <div class="row">
+                <!-- Social Media and Brand Info -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <img src="assets/logo.png" alt="" width="200px" />
+                    <p>Best cakes, baked with love!</p>
+
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-dark text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-dark text-decoration-none">About</a></li>
+                        <li><a href="#product" class="text-dark text-decoration-none">Product</a></li>
+                        <li><a href="#testimonial-section" class="text-dark text-decoration-none">Testimoni</a></li>
+                        <li><a href="#ctc" class="text-dark text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-telephone"></i> 082111752860</p>
+                    <p><i class="bi bi-envelope"></i> info@gobakery.com</p>
+                    <p><i class="bi bi-geo-alt"></i> 123 Bakery Street, Cake Town</p>
+                </div>
+            </div>
+
+            <!-- Testimonial Section -->
+
+            <!-- Copyright and Final CTA -->
+            <div class="text-center mt-4">
+                <p>&copy; GoBakery 2024 </p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Inisialisasi AOS
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
